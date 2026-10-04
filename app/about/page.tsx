@@ -15,13 +15,13 @@ export default function AboutPage() {
       <Section>
         <Container>
           <SectionHeading as="h1" title={about.title} subtitle={about.subtitle} />
-          <div className="max-w-2xl space-y-4 text-lg text-muted">
+          <div className="text-muted max-w-2xl space-y-4 text-lg">
             {about.story.map((p) => (
               <p key={p}>{p}</p>
             ))}
           </div>
           <h2 className="mt-12 text-2xl font-semibold">Mission</h2>
-          <p className="mt-2 max-w-2xl text-lg text-muted">{about.mission}</p>
+          <p className="text-muted mt-2 max-w-2xl text-lg">{about.mission}</p>
         </Container>
       </Section>
 
@@ -30,9 +30,9 @@ export default function AboutPage() {
           <SectionHeading id="values" title="Values" />
           <ul className="grid gap-6 sm:grid-cols-2">
             {about.values.map((v) => (
-              <li key={v.title} className="rounded-xl border border-line bg-white p-6">
+              <li key={v.title} className="border-line rounded-xl border bg-white p-6">
                 <h3 className="text-lg font-semibold">{v.title}</h3>
-                <p className="mt-1 text-muted">{v.text}</p>
+                <p className="text-muted mt-1">{v.text}</p>
               </li>
             ))}
           </ul>
@@ -42,11 +42,14 @@ export default function AboutPage() {
       <Section aria-labelledby="milestones">
         <Container>
           <SectionHeading id="milestones" title={about.milestonesTitle} />
-          <ol className="max-w-2xl space-y-8 border-l-2 border-line pl-6">
+          <ol className="border-line max-w-2xl space-y-8 border-l-2 pl-6">
             {about.milestones.map((m) => (
               <li key={m.title} className="relative">
-                <span aria-hidden="true" className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-accent" />
-                <p className="text-sm font-semibold text-accent">{m.year}</p>
+                <span
+                  aria-hidden="true"
+                  className="bg-accent absolute top-1.5 -left-[31px] h-3 w-3 rounded-full"
+                />
+                <p className="text-accent text-sm font-semibold">{m.year}</p>
                 <h3 className="text-lg font-semibold">{m.title}</h3>
                 <p className="text-muted">{m.text}</p>
               </li>

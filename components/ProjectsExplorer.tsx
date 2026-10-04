@@ -25,7 +25,7 @@ export function ProjectsExplorer({ projects }: { projects: ProjectWithStats[] })
               "rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors",
               active === tag
                 ? "border-accent bg-accent text-white"
-                : "border-line bg-white text-ink hover:bg-surface",
+                : "border-line text-ink hover:bg-surface bg-white",
             )}
           >
             {tag}

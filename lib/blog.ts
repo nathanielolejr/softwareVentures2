@@ -16,7 +16,10 @@ export type PostMeta = {
 };
 
 /** Minimal frontmatter parser (key: value, and [a, b] arrays) to avoid an extra dependency. */
-function parseFrontmatter(raw: string): { data: Record<string, string | string[]>; content: string } {
+function parseFrontmatter(raw: string): {
+  data: Record<string, string | string[]>;
+  content: string;
+} {
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
   if (!match) return { data: {}, content: raw };
   const data: Record<string, string | string[]> = {};

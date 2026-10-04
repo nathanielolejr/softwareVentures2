@@ -7,7 +7,7 @@ export function ContactCta() {
   return (
     <Section aria-labelledby="cta-title">
       <Container>
-        <div className="rounded-2xl bg-accent px-6 py-14 text-center sm:px-12">
+        <div className="bg-accent rounded-2xl px-6 py-14 text-center sm:px-12">
           <h2 id="cta-title" className="text-3xl font-semibold tracking-tight text-white">
             {title}
           </h2>

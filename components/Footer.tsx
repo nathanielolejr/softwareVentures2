@@ -5,12 +5,12 @@ import { Container } from "./Container";
 export function Footer() {
   const socials = site.socials.filter((s) => s.href);
   return (
-    <footer className="border-t border-line bg-surface">
-      <Container className="grid gap-8 py-12 sm:grid-cols-3">
+    <footer className="border-line bg-surface border-t">
+      <Container className="grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <p className="text-lg font-semibold">{site.name}</p>
-          <p className="mt-1 text-muted">{site.tagline}</p>
-          <a className="mt-3 inline-block text-accent underline" href={`mailto:${site.email}`}>
+          <p className="text-muted mt-1">{site.tagline}</p>
+          <a className="text-accent mt-3 inline-block underline" href={`mailto:${site.email}`}>
             {site.email}
           </a>
         </div>
@@ -41,7 +41,7 @@ export function Footer() {
           ))}
         </ul>
       </Container>
-      <div className="border-t border-line py-4 text-center text-sm text-muted">
+      <div className="border-line text-muted border-t py-4 text-center text-sm">
         © {new Date().getFullYear()} {site.name}. All rights reserved.
       </div>
     </footer>

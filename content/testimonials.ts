@@ -10,7 +10,8 @@ export type Testimonial = {
 // TODO: Replace with real testimonials and client logos (with permission).
 export const testimonials: Testimonial[] = [
   {
-    quote: "Placeholder testimonial. They delivered on time, communicated clearly and the site is fast.",
+    quote:
+      "Placeholder testimonial. They delivered on time, communicated clearly and the site is fast.",
     name: "Casey Morgan",
     title: "Head of Marketing",
     company: "Northwind Co. (placeholder)",
@@ -18,7 +19,8 @@ export const testimonials: Testimonial[] = [
     placeholder: true,
   },
   {
-    quote: "Placeholder testimonial. Our manual workflows are now automated and we trust the results.",
+    quote:
+      "Placeholder testimonial. Our manual workflows are now automated and we trust the results.",
     name: "Priya Patel",
     title: "Operations Lead",
     company: "Contoso Labs (placeholder)",
@@ -26,7 +28,8 @@ export const testimonials: Testimonial[] = [
     placeholder: true,
   },
   {
-    quote: "Placeholder testimonial. A small team that behaves like a senior engineering department.",
+    quote:
+      "Placeholder testimonial. A small team that behaves like a senior engineering department.",
     name: "Taylor Brooks",
     title: "Founder",
     company: "Fabrikam Studio (placeholder)",

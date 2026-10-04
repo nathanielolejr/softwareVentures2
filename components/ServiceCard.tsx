@@ -9,19 +9,33 @@ const icons: Record<Service["icon"], string> = {
 
 export function ServiceCard({ service }: { service: Service }) {
   return (
-    <article className="flex h-full flex-col rounded-xl border border-line bg-white p-6">
-      <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft text-accent">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <article className="border-line flex h-full flex-col rounded-xl border bg-white p-6">
+      <span className="bg-accent-soft text-accent flex h-10 w-10 items-center justify-center rounded-lg">
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
           <path d={icons[service.icon]} />
         </svg>
       </span>
       <h3 className="mt-4 text-xl font-semibold">{service.title}</h3>
-      <p className="mt-2 text-muted">{service.description}</p>
-      <h4 className="mt-5 text-sm font-semibold uppercase tracking-wide text-ink">Typical deliverables</h4>
-      <ul className="mt-2 space-y-1.5 text-muted">
+      <p className="text-muted mt-2">{service.description}</p>
+      <h4 className="text-ink mt-5 text-sm font-semibold tracking-wide uppercase">
+        Typical deliverables
+      </h4>
+      <ul className="text-muted mt-2 space-y-1.5">
         {service.deliverables.map((d) => (
           <li key={d} className="flex gap-2">
-            <span aria-hidden="true" className="text-accent">✓</span>
+            <span aria-hidden="true" className="text-accent">
+              ✓
+            </span>
             {d}
           </li>
         ))}

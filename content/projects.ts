@@ -26,13 +26,20 @@ export const projects: Project[] = [
     summary: "Placeholder: a production web platform built with a modern React framework.",
     description:
       "Placeholder project. Replace with a real description of what the project does and who uses it.",
-    problem: "Placeholder: the client needed a faster site that marketing could update on their own.",
+    problem:
+      "Placeholder: the client needed a faster site that marketing could update on their own.",
     solution:
       "Placeholder: we shipped a statically generated site backed by a headless CMS, cutting load times by half.",
     tags: ["TypeScript", "Next.js", "Web"],
     screenshots: [
-      { src: "/images/screenshot-1.svg", alt: "Placeholder screenshot of the Sample Web Platform dashboard" },
-      { src: "/images/screenshot-2.svg", alt: "Placeholder screenshot of the Sample Web Platform landing page" },
+      {
+        src: "/images/screenshot-1.svg",
+        alt: "Placeholder screenshot of the Sample Web Platform dashboard",
+      },
+      {
+        src: "/images/screenshot-2.svg",
+        alt: "Placeholder screenshot of the Sample Web Platform landing page",
+      },
     ],
     liveUrl: "https://nextjs.org",
     featured: true,
@@ -50,7 +57,10 @@ export const projects: Project[] = [
     solution: "Placeholder: a typed, themeable component library published to npm and documented.",
     tags: ["CSS", "Design System", "Open Source"],
     screenshots: [
-      { src: "/images/screenshot-2.svg", alt: "Placeholder screenshot of the Sample Design System docs" },
+      {
+        src: "/images/screenshot-2.svg",
+        alt: "Placeholder screenshot of the Sample Design System docs",
+      },
     ],
     liveUrl: "https://tailwindcss.com",
     featured: true,
@@ -68,7 +78,10 @@ export const projects: Project[] = [
     solution: "Placeholder: schema-validated webhooks and retries now keep both systems in sync.",
     tags: ["TypeScript", "Automation", "Open Source"],
     screenshots: [
-      { src: "/images/screenshot-3.svg", alt: "Placeholder screenshot of the Sample Automation Toolkit run log" },
+      {
+        src: "/images/screenshot-3.svg",
+        alt: "Placeholder screenshot of the Sample Automation Toolkit run log",
+      },
     ],
     liveUrl: "https://zod.dev",
     featured: true,
@@ -80,13 +93,16 @@ export const projects: Project[] = [
     repo: "WordPress/gutenberg",
     title: "Sample WordPress Theme",
     summary: "Placeholder: a block-based WordPress theme for a content-heavy site.",
-    description:
-      "Placeholder project. Replace with a real WordPress theme or plugin you maintain.",
+    description: "Placeholder project. Replace with a real WordPress theme or plugin you maintain.",
     problem: "Placeholder: the legacy theme was slow and hard for editors to use.",
-    solution: "Placeholder: a lean block theme with reusable patterns and a clean editing experience.",
+    solution:
+      "Placeholder: a lean block theme with reusable patterns and a clean editing experience.",
     tags: ["PHP", "WordPress"],
     screenshots: [
-      { src: "/images/screenshot-1.svg", alt: "Placeholder screenshot of the Sample WordPress Theme" },
+      {
+        src: "/images/screenshot-1.svg",
+        alt: "Placeholder screenshot of the Sample WordPress Theme",
+      },
     ],
     featured: false,
     order: 4,

@@ -1,0 +1,41 @@
+---
+title: "Hello, world: why we started Software Ventures"
+date: "2026-01-15"
+summary: "A short note on why we build small, fast websites and how we approach every project."
+tags: ["Company", "Engineering"]
+image: "/images/blog-sample.svg"
+imageAlt: "Abstract illustration"
+---
+
+{/* TODO: Replace this sample post with real content. */}
+
+## Why we exist
+
+We believe good software should be **fast**, **accessible** and easy to maintain. That is the whole pitch.
+
+![Abstract placeholder illustration for the sample post](/images/blog-sample.svg)
+
+## How we build
+
+Every project starts with a small, typed core. Here is a tiny example of validating a contact form with Zod:
+
+```ts
+import { z } from "zod";
+
+const schema = z.object({
+  email: z.string().email(),
+  message: z.string().min(10),
+});
+
+export function parse(input: unknown) {
+  return schema.safeParse(input);
+}
+```
+
+### Our checklist
+
+- Lighthouse 95+ across the board
+- Keyboard-friendly interfaces
+- Honest estimates
+
+Want to work together? [Get in touch](/contact).

@@ -11,7 +11,10 @@ export const home = {
     title: "What we do",
     items: [
       { title: "Build", text: "Modern websites and web apps, designed and engineered end to end." },
-      { title: "Integrate", text: "Connect your tools and automate the repetitive work between them." },
+      {
+        title: "Integrate",
+        text: "Connect your tools and automate the repetitive work between them.",
+      },
       { title: "Operate", text: "Reliable hosting, CI/CD and monitoring so releases stay boring." },
     ],
   },

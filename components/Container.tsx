@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 
 export function Container({ className, ...props }: React.ComponentProps<"div">) {
-  return <div className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8", className)} {...props} />;
+  return (
+    <div className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8", className)} {...props} />
+  );
 }
 
 export function Section({
@@ -30,10 +32,10 @@ export function SectionHeading({
 }) {
   return (
     <div className="mb-10 max-w-2xl">
-      <Tag id={id} className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+      <Tag id={id} className="text-ink text-3xl font-semibold tracking-tight sm:text-4xl">
         {title}
       </Tag>
-      {subtitle && <p className="mt-3 text-lg text-muted">{subtitle}</p>}
+      {subtitle && <p className="text-muted mt-3 text-lg">{subtitle}</p>}
     </div>
   );
 }

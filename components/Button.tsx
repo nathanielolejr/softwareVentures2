@@ -15,8 +15,8 @@ export function ButtonLink({ href, variant = "primary", size = "md", className, 
         "inline-flex items-center justify-center rounded-lg font-medium transition-colors",
         size === "md" ? "px-5 py-3 text-base" : "px-3.5 py-2 text-sm",
         variant === "primary"
-          ? "bg-accent text-white hover:bg-accent-dark"
-          : "border border-line bg-white text-ink hover:bg-surface",
+          ? "bg-accent hover:bg-accent-dark text-white"
+          : "border-line text-ink hover:bg-surface border bg-white",
         className,
       )}
       {...props}

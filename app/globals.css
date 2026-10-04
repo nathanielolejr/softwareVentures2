@@ -19,10 +19,10 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white font-sans text-ink antialiased;
+    @apply text-ink bg-white font-sans antialiased;
   }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-accent;
+    @apply outline-accent outline-2 outline-offset-2;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
@@ -33,7 +33,7 @@
 
 /* rehype-pretty-code */
 pre[data-theme] {
-  @apply overflow-x-auto rounded-lg border border-line p-4 text-sm leading-6;
+  @apply border-line overflow-x-auto rounded-lg border p-4 text-sm leading-6;
 }
 pre[data-theme] code {
   @apply bg-transparent p-0;
@@ -44,5 +44,5 @@ pre[data-theme] code {
   content: none;
 }
 .prose :where(code):not(pre code) {
-  @apply rounded bg-surface px-1.5 py-0.5 text-[0.9em] font-medium;
+  @apply bg-surface rounded px-1.5 py-0.5 text-[0.9em] font-medium;
 }

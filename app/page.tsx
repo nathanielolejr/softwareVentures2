@@ -21,13 +21,15 @@ export default async function HomePage() {
 
   return (
     <>
-      <Section className="pb-12 pt-16 sm:pt-28">
+      <Section className="pt-16 pb-12 sm:pt-28">
         <Container>
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">{hero.eyebrow}</p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-ink sm:text-6xl">
+          <p className="text-accent text-sm font-semibold tracking-wide uppercase">
+            {hero.eyebrow}
+          </p>
+          <h1 className="text-ink mt-4 max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
             {hero.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted sm:text-xl">{hero.subtitle}</p>
+          <p className="text-muted mt-6 max-w-2xl text-lg sm:text-xl">{hero.subtitle}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={hero.primaryCta.href} variant="secondary">
               {hero.primaryCta.label}
@@ -46,7 +48,7 @@ export default async function HomePage() {
             {whatWeDo.items.map((item) => (
               <li key={item.title}>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-1 text-muted">{item.text}</p>
+                <p className="text-muted mt-1">{item.text}</p>
               </li>
             ))}
           </ul>
@@ -55,7 +57,11 @@ export default async function HomePage() {
 
       <Section aria-labelledby="featured">
         <Container>
-          <SectionHeading id="featured" title={home.featuredProjects.title} subtitle={home.featuredProjects.subtitle} />
+          <SectionHeading
+            id="featured"
+            title={home.featuredProjects.title}
+            subtitle={home.featuredProjects.subtitle}
+          />
           <ul className="grid gap-6 md:grid-cols-3">
             {featured.map((p) => (
               <li key={p.slug}>
@@ -64,7 +70,7 @@ export default async function HomePage() {
             ))}
           </ul>
           <p className="mt-8">
-            <Link href="/projects" className="font-medium text-accent underline">
+            <Link href="/projects" className="text-accent font-medium underline">
               View all projects
             </Link>
           </p>
@@ -82,7 +88,7 @@ export default async function HomePage() {
             ))}
           </ul>
           <p className="mt-8">
-            <Link href="/team" className="font-medium text-accent underline">
+            <Link href="/team" className="text-accent font-medium underline">
               Meet the team
             </Link>
           </p>

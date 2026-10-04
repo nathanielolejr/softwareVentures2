@@ -4,7 +4,7 @@ export function Tag({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "inline-block rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-medium text-accent-dark",
+        "bg-accent-soft text-accent-dark inline-block rounded-full px-2.5 py-0.5 text-xs font-medium",
         className,
       )}
       {...props}

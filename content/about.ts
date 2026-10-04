@@ -16,7 +16,15 @@ export const about = {
   milestonesTitle: "Milestones",
   milestones: [
     { year: "2025", title: "Placeholder: Studio founded", text: "First client project delivered." },
-    { year: "2025", title: "Placeholder: First open-source release", text: "Published our first public repository." },
-    { year: "2026", title: "Placeholder: Team grows to three", text: "Added DevOps and integrations capability." },
+    {
+      year: "2025",
+      title: "Placeholder: First open-source release",
+      text: "Published our first public repository.",
+    },
+    {
+      year: "2026",
+      title: "Placeholder: Team grows to three",
+      text: "Added DevOps and integrations capability.",
+    },
   ],
 };
