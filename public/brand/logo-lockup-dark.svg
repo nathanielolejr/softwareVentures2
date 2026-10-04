@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 431 64" width="431" height="64"><defs></defs>
+  <rect x="4" y="4" width="26" height="26" fill="#5980a6"></rect>
+  <circle cx="47" cy="17" r="13" fill="#f2f2f3"></circle>
+  <path d="M4 34 L30 60 L4 60 Z" fill="#416180"></path>
+  <path d="M34 60 L34 34 A26 26 0 0 1 60 60 Z" fill="#94bce3"></path>
+  <text x="86" y="46" font-family="'Barlow Condensed SV','Barlow Condensed',sans-serif" font-weight="600" font-size="40" letter-spacing="2.40" fill="#f2f2f3">SOFTWARE VENTURES</text>
+</svg>

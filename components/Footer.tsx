@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/content/site";
 import { Container } from "./Container";
+import { Logo } from "./Logo";
 
 export function Footer() {
   const socials = site.socials.filter((s) => s.href);
@@ -8,7 +9,7 @@ export function Footer() {
     <footer className="border-line bg-surface border-t">
       <Container className="grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
-          <p className="text-lg font-semibold">{site.name}</p>
+          <Logo />
           <p className="text-muted mt-1">{site.tagline}</p>
           <a className="text-accent mt-3 inline-block underline" href={`mailto:${site.email}`}>
             {site.email}

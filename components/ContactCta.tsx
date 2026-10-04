@@ -11,7 +11,7 @@ export function ContactCta() {
           <h2 id="cta-title" className="text-3xl font-semibold tracking-tight text-white">
             {title}
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-lg text-indigo-100">{text}</p>
+          <p className="mx-auto mt-3 max-w-xl text-lg text-white/90">{text}</p>
           <ButtonLink href={cta.href} variant="secondary" className="mt-8">
             {cta.label}
           </ButtonLink>

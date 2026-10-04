@@ -6,6 +6,7 @@ import { useState } from "react";
 import { site } from "@/content/site";
 import { ButtonLink } from "./Button";
 import { Container } from "./Container";
+import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -20,9 +21,9 @@ export function Header() {
       >
         Skip to content
       </a>
-      <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="text-ink text-lg font-semibold tracking-tight">
-          {site.name}
+      <Container className="flex h-16 items-center justify-between gap-2 sm:gap-4">
+        <Link href="/" aria-label={`${site.name} home`}>
+          <Logo />
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-1 md:flex">

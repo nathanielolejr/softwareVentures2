@@ -3,12 +3,13 @@
 
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Barlow Condensed", var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  /* Accent: indigo-700 on white = 8.6:1 contrast */
-  --color-accent: #4338ca;
-  --color-accent-dark: #3730a3;
-  --color-accent-soft: #eef2ff;
-  --color-ink: #0f172a;
+  /* Accent from the logo (#416180): ~6.3:1 contrast on white */
+  --color-accent: #416180;
+  --color-accent-dark: #2f4a66;
+  --color-accent-soft: #eaf0f7;
+  --color-ink: #1d1f20;
   --color-muted: #475569;
   --color-line: #e2e8f0;
   --color-surface: #f8fafc;

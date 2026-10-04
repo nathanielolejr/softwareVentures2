@@ -1,6 +1,12 @@
 export const site = {
   name: "Software Ventures",
   tagline: "create for now",
+  logo: {
+    mark: "/brand/logo-mark.svg",
+    lockup: "/brand/logo-lockup.svg",
+    lockupDark: "/brand/logo-lockup-dark.svg",
+    alt: "Software Ventures logo",
+  },
   description:
     "Software Ventures is a small web development team building fast, accessible websites, WordPress builds, automations and DevOps foundations for growing businesses.",
   // Falls back to localhost for local dev. Set NEXT_PUBLIC_SITE_URL in production.

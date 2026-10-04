@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/content/site";
+import "@fontsource/barlow-condensed/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             slogan: site.tagline,
             description: site.description,
             url: site.url,
+            logo: new URL(site.logo.mark, site.url).toString(),
             email: site.email,
             foundingDate: String(site.foundedYear),
             sameAs,
